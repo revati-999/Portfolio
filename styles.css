@@ -1,0 +1,305 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+main{
+    font-family: "Playfair Display";
+    color:rgb(255, 255, 255);
+    overflow:hidden;
+}
+
+#intro1{
+    font-size:48px;
+    font-weight:bold;
+    text-align:center;
+    letter-spacing: 0.2rem;
+    padding-top:15%;
+    text-shadow: 1px 1px 0 #bdbcbc, 2px 2px 0 #d6d6d6, 2px 2px 0 #d6d6d6, 2px 2px 0 #d6d6d6;
+}
+
+#intro2{
+    font-size: 20px;
+    font-weight: 400;
+    text-align:center;
+    padding-top:1.4%;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 0 #d6d6d6, 1px 1px 0 #d6d6d6, 1px 1px 0 #d6d6d6, 1px 1px 0 #d6d6d6;
+}
+/*******************************************************PAGE 1 BEGUN**********************************************/
+
+
+/************************************HEADER1_SKY*******************************/
+.hero1{
+    height:69vh;
+    /* background: linear-gradient(to bottom, rgba(255, 192, 203, 0.8) 70%, #7188db 100%), url('imgs/pexels-photo-907485.jpeg'); */
+    background: linear-gradient(to bottom, rgba(255, 192, 203, 0.8) 60%,  rgba(250, 173, 186, 0.8) 70%, #8171db 99%), url('imgs/pexels-photo-907485.jpeg');
+    position:relative;
+    background-size:cover;
+    background-position:top;
+}
+
+.hero1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('https://grainy-gradients.vercel.app/noise.svg') repeat;  */
+    opacity: 0.4;
+}
+
+/************************************TWINKLE STARS HEADER1 STARTED*******************************/
+.twinkle{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background-color: white;
+    border-radius: 90%;
+    box-shadow: 0 0 5px white;
+    animation: 4s linear 0s infinite alternate twinkle;
+}
+
+ .star1{
+    top:20%;
+    left:10%;
+    animation: 3s linear 1.5s infinite alternate twinkle;
+
+}
+.star2{
+    top:4%;
+    left:40%;
+    animation: 4s linear 2.2s infinite alternate twinkle;
+
+}
+.star3{
+    top:90%;
+    left:10%;
+    animation: 1.5s linear 2s infinite alternate twinkle;
+
+}
+
+.star4{
+    top:55%;
+    left:35%;
+    animation: 2s linear 0s infinite alternate twinkle;
+
+}
+.star5{
+    top:80%;
+    left:97%;
+    animation: 0.75s linear 1s infinite alternate twinkle;
+
+}
+.star6{
+    top:30%;
+    left:80%;
+    animation: 1s linear 1.5s infinite alternate twinkle;
+}
+
+.star7{
+    top:50%;
+    left:3%;
+    animation: 1.25s linear 1.5s infinite alternate twinkle;
+} 
+.star8{
+    top:20%;
+    left:50%;
+    animation: 2s linear 1.5s infinite alternate twinkle;
+} 
+.star9{
+    top:4%;
+    left:98%;
+    animation: 1s linear 1.5s infinite alternate twinkle;
+} 
+.star10{
+    top:70%;
+    left:70%;
+    animation: 2s linear 1.5s infinite alternate twinkle;
+}
+ 
+.star21{
+    top:10%;
+    left:50%;
+    animation: 2s linear 1s infinite alternate twinkle;
+}
+
+.star22{
+    top:50%;
+    right:90%;
+    animation: 1.5s linear 0s infinite alternate twinkle;
+}
+
+.star23{
+    top:30%;
+    left:70%;
+    animation: 1s linear 1.5s infinite alternate twinkle;
+}
+
+.star24{
+    top:80%;
+    left:90%;
+    animation: 2s linear 2s infinite alternate twinkle;
+}
+
+.star25{
+    top:70%;
+    left:30%;
+    animation: 1.75s linear 1s infinite alternate twinkle;
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
+
+/************************************TWINKLE STARS HEADER1 ENDED*******************************/
+
+
+
+/***********************************HEADER2_ANIMATION***************************/
+/*//667abf*/
+.hero2{
+    background-color:#8171db; 
+    height:32vh;
+    position:relative;
+}
+
+
+.hero2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('https://grainy-gradients.vercel.app/noise.svg') repeat;  */
+    opacity: 0.4;
+}
+
+#lamp{
+    position:absolute;
+    height:42vh;
+    left:78%;
+    top:-30%;
+}
+.ride{
+    position:absolute;
+    transform:translateX(350%);
+    top:-8%;
+
+}
+
+#bike {
+    height:35vh;
+    animation:ride 16s forwards;
+}
+
+@keyframes ride {
+    0%{
+        transform:translateX(-1vh);
+    }
+    100%{
+        transform: translateX(-143vh);
+    }
+    
+}
+
+
+/**************************************************PAGE 1 FINISHED************************************************/
+
+
+/**************************************************PAGE 2 STATRTED***********************************************/
+
+ .hero3{
+    font-family: "Playfair Display", serif;
+    color:white;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height:100vh;
+    background-size: cover;
+    overflow:hidden;
+    background: linear-gradient(to bottom, #8171db 8%, rgba(253, 197, 206, 0.8) 40%, rgba(250, 173, 186, 0.8) 80%), url('imgs/pexels-photo-907485.jpeg');
+} 
+
+.hero3::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity: 0.4;
+    top:0;
+    left:0;
+    background: url('https://grainy-gradients.vercel.app/noise.svg') repeat; 
+}
+
+#left-para{
+    top:15%;
+    position:absolute;
+    left:2%;
+    font-size:17px;
+    letter-spacing:0.04rem;
+    text-align:center;
+
+};
+
+.left-text{
+    padding-top:1%;
+}
+
+#left-heading{
+    text-align:center;
+    padding-bottom: 3%;
+}
+#right-para{
+    bottom:10%;
+    font-size:17px;
+    letter-spacing:0.04rem;
+    right:2%;
+    position:absolute;
+    z-index:2;
+
+} 
+
+.right-text{
+    text-align: center;
+    padding-top:1%;
+
+}
+
+.center-piece{ 
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+ }
+ /**************************************************PAGE 2 FINISHED***********************************************/
+
+
+
+
+
+/*************************************************PAGE 3 STATRTED***********************************************/
+
+  .hero4{
+     font-family: "Playfair Display", serif;
+     color:white;
+     position:relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+     height:100vh;
+     background-size: cover;
+     overflow:hidden;
+     background: linear-gradient(to bottom, #8171db 8%, rgba(253, 197, 206, 0.8) 40%, rgba(250, 173, 186, 0.8) 80%), url('imgs/pexels-photo-907485.jpeg');
+  }
