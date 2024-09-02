@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    scroll-behavior: smooth;
 }
 
 main{
@@ -169,8 +170,29 @@ main{
     height:32vh;
     position:relative;
 }
-
-
+/* nav.container-fluid{
+    cursor: pointer;
+} */
+.navbar{
+    position: sticky;
+    top:2%;
+    margin-bottom:2.4vh;
+}
+.nav-link{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.offcanvas.show{
+    background: linear-gradient(to bottom, #8171db 18%, rgba(253, 197, 206, 0.8) 60%, rgba(250, 173, 186, 0.8) 90%), url('imgs/pexels-photo-907485.jpeg');
+}
+.offcanvas.show .nav-link {
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-bottom:1.2vh;
+}
+#offcanvasNavbarLabel{
+    color:white;
+}
 .hero2::after {
     content: '';
     position: absolute;
@@ -192,12 +214,11 @@ main{
     position:absolute;
     transform:translateX(350%);
     top:-8%;
-
 }
 
 #bike {
     height:35vh;
-    animation:ride 16s forwards;
+    animation:ride 16s forwards infinite;
 }
 
 @keyframes ride {
@@ -223,7 +244,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-   
     height:100vh;
     background-size: cover;
     overflow:hidden;
@@ -248,31 +268,29 @@ main{
     font-size:17px;
     letter-spacing:0.04rem;
     text-align:center;
-
 };
-
-.left-text{
+/* .left-text{
     padding-top:1%;
-}
+} */
 
-#left-heading{
+h2#left-heading{
     text-align:center;
     padding-bottom: 3%;
+    margin-bottom: 3vh;
 }
+
 #right-para{
-    bottom:10%;
+    bottom:8%;
     font-size:17px;
     letter-spacing:0.04rem;
     right:2%;
     position:absolute;
-    z-index:2;
-
+    /* z-index:2; */
 } 
 
 .right-text{
     text-align: center;
-    padding-top:1%;
-
+    /* padding-top:1%; */
 }
 
 .center-piece{ 
@@ -280,12 +298,8 @@ main{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-
  }
  /**************************************************PAGE 2 FINISHED***********************************************/
-
-
-
 
 
 /*************************************************PAGE 3 STATRTED***********************************************/
@@ -294,12 +308,637 @@ main{
      font-family: "Playfair Display", serif;
      color:white;
      position:relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    
+     display: flex; 
+     justify-content: space-between;
+     align-items: flex-end;
      height:100vh;
      background-size: cover;
      overflow:hidden;
+     gap:6vw;
      background: linear-gradient(to bottom, #8171db 8%, rgba(253, 197, 206, 0.8) 40%, rgba(250, 173, 186, 0.8) 80%), url('imgs/pexels-photo-907485.jpeg');
   }
+
+  .left-preview{
+     height: 66vh;
+     width:56%;
+     /* border:1px solid indigo; */
+     bottom:0;
+     transition: opacity 0.5s ease, background-size 0.5s ease; /* Smooth transitions for opacity and transform */
+     overflow: hidden;
+     transition: opacity 0.5s ease; /* Initial scale */
+     opacity: 0; 
+  }
+
+   .left_image{
+    background-size: cover;
+    background-position:center;
+    border-top-right-radius: 4vw;
+    background-repeat: no-repeat;
+    width:70%;
+    /* transform:scale(1); */
+    opacity: 1;
+   }
+
+  .right-pros{
+    height: 68vh;
+    width:36vw;
+    padding-right:8vw;
+    /* border:1px solid indigo; */
+  }
+
+  .right-pros h2{
+    font-size:3.2vw;
+    padding:3vh 0;
+  }
+
+  .right-pros p{
+    font-size:1.7vw;
+    font-weight: 600;
+    padding: 2.8vh 0;
+    margin-left: 0;
+    transition: margin-left 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), padding-left 0.3s    cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .right-pros-a{
+    text-decoration: none;
+    color:white;
+  }
+  .right-pros .arrow{
+    margin-right:-1vw;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .proj{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.3vw;
+  }
+ 
+  .svg1{
+    margin-right:   0.6vw;
+
+  }
+
+  /*************************************************PAGE 4 STATRTED***********************************************/
+
+  .hero5{
+    font-family: "Playfair Display", serif;
+    color:white;
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+    height:120vh;
+    width: 100%;
+    background-size: cover;
+    overflow:hidden;
+    gap:6vw;
+    position: relative;
+    background: linear-gradient(to bottom, #8171db 8%, rgba(253, 197, 206, 0.8) 40%, rgba(250, 173, 186, 0.8) 80%), url('imgs/pexels-photo-907485.jpeg');
+ }
+
+ .hero5_left{
+    width:42%;
+    height:30vh;
+    margin-bottom:40vh; 
+ }
+
+ .hero5_left h1{
+    font-size: 7vw; 
+    margin-left: 3vw;
+ }
+
+ .hero5_right{
+    /* border:1px solid indigo; */
+    width:60%;
+    height:70vh;
+    margin-bottom:24vh; 
+    display: flex;
+    justify-content: center;
+ }
+
+ .form1{
+    height:60vh;
+    /* width: 100%;   */
+    padding:0 2vw;
+    border:1px solid white;
+ }
+
+ .form{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    outline:none;
+    gap: 2vh;
+    margin-top:4vh;
+    padding:2vh;
+ }
+
+ .contact_inp{
+    margin-top:2vh;
+    width:22vw;
+    border:2px solid white;
+    height:5vh;
+    font-weight: 400;
+    padding:0.4vh;
+    outline:none;
+    cursor: pointer;
+ }
+
+ textarea.contact_inp{
+    padding-top:1vh;
+    height: 10vh;
+ }
+
+ .contact_inp:focus{
+    border:2px solid #6558b1;
+ }
+
+ .contact_inp::placeholder{
+    color: #a9a9a9;
+    font-size: 1vw;
+ }
+
+ .form button{
+    width:10vw;
+    font-size: 1.2em;
+    font-weight: 600;
+    height:6.4vh;
+    margin-top:4vh; 
+    border-radius: 24px;
+    cursor: pointer;
+    display: flex;
+    gap:0.8vw;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border:none;
+    background: linear-gradient(240deg, rgba(251, 148, 165, 0.8), #6558b1)  ;
+ }
+ .social{   
+    display:flex;   
+    gap:1.4vw;
+    margin-bottom: 26vh;
+    cursor: pointer;
+    margin-left: 6vw;
+ }
+
+.totoro{
+    /* border: 1px solid green; */
+    height:22vh;
+    right:10%;
+    width:18vw;
+    position: absolute;
+    margin-bottom: 0;
+    background-image: url('imgs/totoro/totoro1-removebg-preview.png');
+    background-size: cover;
+    animation: walk 22s linear infinite, cycle 1s steps(7) infinite;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+ }
+
+@keyframes cycle {
+    
+        0% {
+            background-image: url('imgs/totoro/totoro1-removebg-preview.png');
+        }
+        7% {
+            background-image: url('imgs/totoro/totorobckg2.png');
+        }
+        14% {
+            background-image: url('imgs/totoro/totoro3-removebg-preview.png');
+        }
+        21% {
+            background-image: url('imgs/totoro/totoro4-removebg-preview.png');
+        }
+        28% {
+            background-image: url('imgs/totoro/totoro5-removebg-preview.png');
+        }
+        35% {
+            background-image: url('imgs/totoro/totoro6-removebg-preview.png');
+        }
+        42% {
+            background-image: url('imgs/totoro/totoro7-removebg-preview.png');
+        }
+       49% {
+            background-image: url('imgs/totoro/totoro1-removebg-preview.png');
+        }
+        56%{
+            background-image: url('imgs/totoro/totoro1-removebg-preview.png');
+        } 
+}
+
+@keyframes walk {
+    0%{
+            transform:translateX(8vw);
+        }
+    100%{
+        transform: translateX(-100vw);
+    }
+}
+
+
+
+/*******************************************************MEDIA QUERY**************************************************/
+
+
+/***************MEDIA QUERY 2ND PAGE*****************/
+
+@media (min-width:300px) and (max-width:400px) {
+
+    #left-para{
+        margin-bottom: 10%;
+        font-size:14px;
+        letter-spacing: 0;
+        margin: 10% 0;
+        width: 100%;
+    }
+
+    #right-para{
+        font-size:14px;
+        letter-spacing: 0;
+        padding:0;
+        margin: 5% 0;
+        width: 100%;
+    }
+
+    .left-text{
+        margin:0;
+    }
+    .right-text{
+        margin:0;
+        padding:0;
+    }
+    .right-text:nth-last-child(){
+        cursor: pointer;
+    }
+    .center-piece{
+        height: 100px;
+        padding:0;
+        margin: 14% auto;
+    } 
+
+}   
+
+@media (min-width:401px) and (max-width:644px){
+    #left-para{
+        margin-bottom: 10%;
+        font-size:15px;
+        margin: 10% 0;
+        width: 100%;
+    }
+
+    #right-para{
+        font-size:15px;
+        padding:0;
+        margin: 15% 0 -2%;
+        margin-left:8%;
+        width: 100%;
+    }
+
+    .left-text{
+        margin:0;
+    }
+    .right-text{
+        margin:0;
+        padding:0;
+    }
+    .center-piece{
+        height: 100px;
+        padding:0;
+        margin: 14% auto;
+    } 
+
+}
+
+@media (min-width:645px) and (max-width:775px){
+
+        #left-para{
+            margin-bottom: 10%;
+            font-size:16px;
+            padding:0;
+            margin:0;
+        }
+        .left-text{
+            padding:0;
+            margin:0;
+        }
+
+        .right-text{
+            padding:0;
+            margin:0;
+        }
+    
+        #right-para{
+            font-size:16px;
+            padding:0;
+            margin:0;
+        }
+
+        .center-piece{
+            height: 130px;
+            margin-top:5%;
+        }
+}
+
+@media (min-width:776px) and (max-width:1029px){
+
+    #left-para{
+        margin-bottom: 10%;
+        font-size:16px;
+        padding:0;
+        margin:0;
+    }
+    .left-text{
+        padding:0.6% 0;
+        margin:0;
+    }
+
+    .right-text{
+        padding:0.6% 0;
+        margin:0;
+    }
+
+    #right-para{
+        font-size:16px;
+        padding:0;
+        margin:0;
+    }
+
+    .center-piece{
+        height: 130px;
+        margin-top:5%;
+    }   
+}
+
+
+
+/*****************MEDIA QUERY 3RD PAGE*****************/
+@media (max-width:776px){
+    .hero4{
+        display: block;
+     }
+     .left-preview{
+        width:0%;
+        height:0;
+     }
+
+    .right-pros{
+        margin-top:16vh;
+        margin-left:5vw;
+        width:100%;
+
+    }
+    .right-pros-a{
+        font-size: 3vw;
+    }
+    .right-pros h2{
+        margin-left:2vw;
+    }
+}
+
+@media (min-width:777px) and (max-width:900px){
+    .hero4{
+        display: block;
+     }
+     .left-preview{
+        width:0%;
+        height:0;
+     }
+
+    .right-pros{
+        margin-top:16vh;
+        margin-left:5vw;
+        width:100%;
+      
+    }
+    .right-pros-a{
+        font-size: 2vw;
+    }
+    .right-pros h2{
+        margin-left:1.4vw;
+    }
+}
+
+@media (min-width:901px) and (max-width:1029px){
+    .left-preview{
+        width:58vw;
+    }
+    .right-pros{
+        margin-top:16vh;
+        width:34vw;
+        padding-right:5vw;
+    }
+    .right-pros-a{
+        font-size: 2vw;
+    }
+    .right-pros h2{
+        margin-left:1.4vw;
+    }
+
+    .left_image{
+        background-size:contain;
+    
+    }
+}
+
+/*****************MEDIA QUERY 4TH PAGE*****************/
+
+@media (min-width:300px) and (max-width:476px){
+    .hero5{
+        display:block;
+        height:120vh;
+    }
+    .hero5_left{
+        width:100%;
+        margin-top:10vh;
+        margin-bottom:10vh;
+        text-align: center;
+    }
+    .hero5_right{
+        width:100%;
+        margin:0;
+        margin-top:-28vh;
+        position: relative;
+    }
+    .form1{
+        width: 60vw;
+        height:50vh;
+        margin-top:6vh;
+     }
+
+    .contact_inp{
+        width:34vw;
+    }
+    #submit{
+        width:19vw;
+        font-size: 1em;
+        padding:1vw;
+        margin-top:1.2vh;
+        height: 6vh;
+        border-radius: 24px;
+    }
+    .contact_inp::placeholder{
+        font-size: 0.8em;
+     }
+    
+     .social{
+        margin-left:42vw;
+        position:absolute;
+        margin-top:34vh;
+    } 
+
+    .totoro{
+        position: relative;
+        height:20vh;
+        width: 40vw;
+        margin-top:-1vh;
+        animation: walk 10s linear infinite, cycle 1s steps(7) infinite;
+    }
+
+
+    @keyframes walk {
+        0%{
+            transform:translateX(100vw);
+            }
+        100%{
+            transform: translateX(-50vw);
+        }
+    }
+}
+
+@media (min-width:477px) and (max-width:640px){
+    .hero5{
+        display:block;
+        height:120vh;
+    }
+    .hero5_left{
+        width:100%;
+        margin-top:10vh;
+        margin-bottom:10vh;
+        text-align: center;
+    }
+    .hero5_right{
+        width:100%;
+        margin:0;
+        margin-top:-22vh;
+        position: relative;
+    }
+    .form1{
+        width: 54vw;
+        height:54vh;
+        margin-top:8vh;
+     }
+
+    .contact_inp{
+        width:36vw;
+    }
+    #submit{
+        width:19vw;
+        font-size: 1em;
+        padding:1vw;
+        margin-top:1.6vh;
+        height: 6vh;
+        border-radius: 24px;
+    }
+    .contact_inp::placeholder{
+        font-size: 0.8em;
+     }
+    
+     .social{
+        margin-left:42vw;
+        position:absolute;
+        margin-top:46vh;
+    } 
+
+    .totoro{
+        position: relative;
+        height:19vh;
+        width: 26vw;
+        margin-top:2vh;
+        animation: walk 10s linear infinite, cycle 1s steps(7) infinite;
+    }
+
+
+    @keyframes walk {
+        0%{
+            transform:translateX(100vw);
+            }
+        100%{
+            transform: translateX(-50vw);
+        }
+    }
+}
+
+@media (min-width:641px) and (max-width:776px){
+    .hero5{
+        display:block;
+        height:120vh;
+    }
+    .hero5_left{
+        width:100%;
+        margin-top:8vh;
+        margin-bottom:10vh;
+        text-align: center;
+    }
+    .hero5_right{
+        width:100%;
+        margin:0;
+        margin-top:-19vh;
+        position: relative;
+    }
+    .form1{
+        width: 48vw;
+        height:54vh;
+        margin-top:8vh;
+     }
+
+    .contact_inp{
+        width:36vw;
+    }
+    #submit{
+        width:16vw;
+        font-size: 1em;
+        padding:1vw;
+        margin-top:2vh;
+        height: 7vh;
+        border-radius: 24px;
+    }
+    .contact_inp::placeholder{
+        font-size: 0.8em;
+     }
+    
+     .social{
+        margin-left:46vw;
+        position:absolute;
+        margin-top:48vh;
+    } 
+
+    .totoro{
+        position: relative;
+        height:19vh;
+        width: 24vw;
+        margin-top:2vh;
+        animation: walk 10s linear infinite, cycle 1s steps(7) infinite;
+    }
+
+
+    @keyframes walk {
+        0%{
+            transform:translateX(100vw);
+            }
+        100%{
+            transform: translateX(-50vw);
+        }
+    }
+}
+
+
+@media (min-width:777px) and (max-width:989px){
+    #submit{
+        width: 12vw;
+        font-size: 1.1em;
+    }
+}
